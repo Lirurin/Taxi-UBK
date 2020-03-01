@@ -1,0 +1,94 @@
+.autopark
+  width 100%
+  min-height 480px
+  padding 20px 0
+  background-color #fff
+  overflow hidden
+
+  &__container
+    max-width 1170px
+    height 100%
+    margin 0 auto
+    text-align center
+
+  &__title
+    margin 13px 0
+    color #000
+    font-size 24px
+    text-transform uppercase
+
+    &--blue
+      color #4680AF
+
+  &__card-wrapper
+    display flex
+    flex-flow row wrap
+    justify-content center
+
+    &:nth-child(1)
+      margin-right 15px
+
+    &:nth-child(2)
+      margin-left 15px
+
+  &__cards
+    display flex
+    flex-flow row wrap
+    justify-content center
+    align-items center
+    width 100%
+    min-height 400px
+
+  &__card
+    display flex
+    flex-direction column
+    justify-content space-between
+    align-items center
+    width 264px
+    height 390px
+    padding-bottom 10px
+    border-radius 5px
+    margin 15px 0
+    background-color #FFFFFF
+    box-shadow 0 2px 13px rgba(70, 128, 175, 0.5)
+
+    &:nth-child(1)
+      margin-right 15px
+
+    &:nth-child(2)
+      margin-left 15px
+
+  &__card-title
+    color #505050
+    font-size 18px
+    line-height 45px
+    font-weight 800
+    text-align center
+    text-transform uppercase
+
+  &__card-description, &__card-seats, &__card-luggage
+    font-size 14px
+    line-height 30px
+    text-align left
+
+  &__card-description
+    display block
+    width 100%
+    padding-left 67px
+
+  &__card-line
+    width 128px
+    height 0
+    border-top 1px solid #2CA0DA
+
+  &__card-seats, &__card-luggage
+    display block
+    width 128px
+    padding-left 30px
+    text-align left
+
+  &__card-seats
+    background url('../img/people.png') left center no-repeat
+
+  &__card-luggage
+    background url('../img/case.png') left no-repeat

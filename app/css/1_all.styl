@@ -1,0 +1,169 @@
+@font-face
+  font-family 'montserrat'
+  src  url('./font/montserrat.eot'),
+  url('../font/montserrat.woff2') format('woff2'),
+  url('../font/montserrat.woff') format('woff'),
+  url('../font/montserrat.ttf') format('truetype'),
+  url('../font/montserrat.svg#svgFontName') format('svg')
+  font-weight 400
+  font-style normal
+  font-display swap
+
+@font-face
+  font-family 'montserrat'
+  src  url('../font/montserratbold.eot'),
+  url('../font/montserratbold.woff2') format('woff2'),
+  url('../font/montserratbold.woff') format('woff'),
+  url('../font/montserratbold.ttf') format('truetype'),
+  url('../font/montserratbold.svg#svgFontName') format('svg')
+  font-weight 800
+  font-style normal
+  font-display swap
+
+*
+  box-sizing border-box
+  margin 0
+  padding 0
+  scroll-behavior smooth
+
+body, textarea
+  font-family 'montserrat', sans-serif
+
+select::-ms-expand
+  display none
+
+select
+  appearance none
+  background url(../img/triangle.png) no-repeat right #fff
+  background-position 98% 14px
+
+option[value=""][disabled]
+  display none
+
+input:focus
+  background #fff
+
+textarea:focus
+  background #fff
+
+input[type="checkbox"]
+  visibility hidden
+
+input[type="checkbox"]:checked ~ .cover
+  border 4px solid #fff
+
+.cover
+  position absolute
+  top 15px
+  right 0
+  display block
+  width 12px
+  height 12px
+  border 1px solid #FFFFFF
+  border-radius 3px
+  color #00000000
+  font-size 31px
+  line-height 7px
+
+.label-bold
+  font-weight 700
+
+.hidden__label
+  position absolute
+  height 1px
+  width 1px
+  z-index -1
+  overflow hidden
+
+::-webkit-input-placeholder
+  color #494949
+
+::-moz-placeholder
+  color #494949
+  opacity 1
+
+:-ms-input-placeholder
+  color#494949
+
+:-moz-placeholder
+  color#494949
+  opacity 1
+
+@keyframes bounce
+  0%
+    bottom 60px
+    animation-timing-function: ease-in
+  25%
+    bottom 70px
+    animation-timing-function: ease-in
+  50%
+    bottom 60px
+    animation-timing-function: ease-out
+  75%
+    bottom 70px
+    animation-timing-function: ease-in
+  100%
+    bottom 60px
+    animation-timing-function: ease-in
+
+.js-left-anim
+  opacity 0
+  visibility hidden
+.js-top-anim
+  opacity 0
+  visibility hidden
+.js-appear-anim
+  opacity 0
+  visibility hidden
+.js-right-anim
+  opacity 0
+  visibility hidden
+.animation-right
+  position relative
+  animation righty 1s forwards
+.animation-left
+  position relative
+  animation lefty 1s forwards
+.animation-top
+  position relative
+  animation toping 1s forwards
+.animation-appear
+  position relative
+  animation appear 1.5s forwards
+
+@keyframes appear
+  0%
+    opacity 0
+    visibility hidden
+  100%
+    opacity 1
+    visibility visible
+
+@keyframes toping
+  0%
+    opacity 0
+    bottom -50px
+    visibility visible
+  100%
+    opacity 1
+    bottom 0
+    visibility visible
+
+@keyframes righty
+  0%
+    opacity 0
+    right -50px
+    visibility visible
+  100%
+    opacity 1
+    right 0
+    visibility visible
+@keyframes lefty
+  0%
+    opacity 0
+    left -50px
+    visibility visible
+  100%
+    opacity 1
+    left 0
+    visibility visible

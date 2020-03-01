@@ -1,0 +1,62 @@
+.whyUs
+  width 100%
+  min-height 445px
+  overflow hidden
+
+  &__container
+    max-width 1170px
+    height 100%
+    margin 0 auto
+    text-align center
+
+  &__title
+    margin 13px 0
+    font-size 24px
+    color #505050
+    text-transform uppercase
+
+    &--orange
+      color #e47511
+      font-weight 800
+
+  &__features
+    display flex
+    flex-flow row wrap
+    justify-content center
+    align-items center
+    width 100%
+    min-height 400px
+
+  &__feature
+    width 320px
+    height 150px
+    padding-left 140px
+    margin 20px 32px
+    background-position left top
+    background-repeat no-repeat
+    text-align left
+
+    &:nth-child(1)
+      background-image url('../img/why_clock.png')
+    &:nth-child(2)
+      background-image url('../img/why_case.png')
+    &:nth-child(3)
+      background-image url('../img/why_ruble.png')
+    &:nth-child(4)
+      background-image url('../img/why_date.png')
+    &:nth-child(5)
+      background-image url('../img/why_location.png')
+    &:nth-child(6)
+      background-image url('../img/why_childPlace.png')
+
+  &__feature-name, &__feature-description
+    display block
+    width 170px
+
+  &__feature-name
+    margin 10px 0
+    font-size 18px
+    font-weight bold
+
+  &__feature-description
+    font-size 14px

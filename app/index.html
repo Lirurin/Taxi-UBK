@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#194f8f">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/app.js"></script>
+    <title>Taxi</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__wrapper">
+                <img class="js-top-anim" src="img/Logo.png" alt="Logo">
+                <h1 class="header__title js-top-anim">междугородний трансфер по <span class="header__bold">Крыму</span></h1>
+                <p class="header__text js-top-anim">- Перевозки между всеми городами Крыма<br>
+                    - Индивидуальные экскурсии<br>
+                    - Встреча в аэропорту Симферополя.</p>
+                <p class="header__contact-wrapper js-top-anim">
+                    <a class="header__contact-link" href="#">МТС 8-978-571-14-13</a>
+                    <a class="header__contact-link" href="#">WhatsApp</a>
+                    <a class="header__contact-link" href="#">telegram</a>
+                    <a class="header__contact-link" href="#">viber</a>
+                </p>
+            </div>
+            <div class="header__wrapper">
+                <form class="header__form js-appear-anim" action="#">
+                    <span class="header__form-title">Онлайн-калькулятор</span>
+                    <span class="header__form-subtitle">*поля, обязательные к заполнению</span>
+                    <span class="header__input-wrapper">
+                        <label for="pointFrom" class="hidden__label">Выбор пункта отправки</label>
+                        <select id="pointFrom" class="header__input header__form-dropdown" required>
+                            <option value="" disabled selected>Откуда</option>
+                            <option value="point a">Пункт A</option>
+                            <option value="point b">Пункт B</option>
+                        </select>
+                        <span class="header__required">*</span>
+                    </span>
+                    <span class="header__input-wrapper">
+                        <label for="pointTo" class="hidden__label">Выбор пункта назначения</label>
+                        <select id="pointTo" class="header__input header__form-dropdown" required>
+                            <option value="" disabled selected>Куда</option>
+                            <option value="point c">Пункт C</option>
+                            <option value="point d">Пункт D</option>
+                        </select>
+                        <span class="header__required">*</span>
+                    </span>
+                    <span class="header__input-wrapper header__input-wrapper--thin">
+                        <span class="header__input-inner">
+                            <span class="header__input-wrapper">
+                                <label for="autoType" class="hidden__label">Класс авто</label>
+                                <select id="autoType" class="header__input" required>
+                                    <option value="" disabled selected>Класс авто</option>
+                                    <option value="standard">Стандарт</option>
+                                    <option value="comfort">Комфорт</option>
+                                    <option value="minivan">Минивэн</option>
+                                    <option value="minibus">Микроавтобус</option>
+                                </select>  
+                                <span class="header__required">*</span>
+                            </span>
+                            <span class="header__input-wrapper">
+                                <label for="phoneNumber" class="hidden__label">Номер телефона</label>
+                                <input id="phoneNumber" class="header__input" type="text" name="phone"  placeholder="Номер телефона" required>
+                                <span class="header__required">*</span>
+                            </span>
+                            <span class="header__input-wrapper">
+                                <label for="departureDate" class="hidden__label">Дата</label>
+                                <input id="departureDate" class="header__input header__date" type="text" name="date" placeholder="Дата" onfocus="(this.type='date')" required>
+                                <span class="header__required">*</span>
+                            </span>
+                        </span>
+                        <span class="header__input-inner">
+                            <span class="header__input-wrapper">
+                                <label for="firstName" class="hidden__label">Ваше имя</label>
+                                <input id="firstName" class="header__input" type="text" name="firstname" placeholder="Ваше имя">
+                            </span>
+                            <span class="header__input-wrapper">
+                                <label for="voyageNum" class="hidden__label">Номер рейса</label>
+                                <input id="voyageNum" class="header__input" type="text" name="voyage"  placeholder="Номер рейса">
+                            </span>
+                            <span class="header__input-wrapper">
+                                <label for="departureTime" class="hidden__label">Время</label>
+                                <input id="departureTime" class="header__input header__time" type="text" name="time" placeholder="Время" onfocus="(this.type='time')">
+                            </span>
+                        </span>
+                    </span>
+                    <span class="header__input-wrapper">
+                        <label for="yourComments" class="hidden__label">Ваш комментарий</label>
+                        <textarea id="yourComments" class="header__input header__input--commentary" name="comments" placeholder="Ваш комментарий"></textarea>
+                        <span class="header__checkbox">
+                            <label for="reverse-transfer">Обратный трансфер<br>(скидка <span class="header__checkbox--bold">10</span>%)</label>
+                            <input id="reverse-transfer" type="checkbox">
+                            <label for="reverse-transfer" class="cover"></label>
+                        </span>
+                    </span>
+                    <span class="header__input-wrapper">
+                        <span class="header__price">Стоимость : <span class="header__price-number">1800₽</span> </span>
+                        <button class="header__submit" type="submit">Заказать такси</button>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <div class="header__proceed-wrapper">
+            <a class="header__proceed" href="#autopark">
+                <svg><polygon points="0,4 13,26 26,4"></polygon></svg>
+            </a>
+        </div>  
+    </header>
+    <main>
+        <section id="autopark" class="autopark">
+            <div class="autopark__container">
+                <h2 class="autopark__title">Наш <span class="autopark__title--blue">автопарк</span></h2>
+                <div class="autopark__cards">
+                    <div class="autopark__card-wrapper">
+                        <div class="autopark__card js-right-anim">
+                            <span class="autopark__card-title">Стандарт</span>
+                            <img src="img/car_1.png" alt="car1">
+                            <p class="autopark__card-description">
+                                Volkswagen Polo<br>
+                                Toyota Corolla<br>
+                                KIA Rio и другие
+                            </p>
+                            <span class="autopark__card-line"></span>
+                            <span class="autopark__card-seats">4 места</span>
+                            <span class="autopark__card-luggage">3 багажа</span>
+                        </div>
+                        <div class="autopark__card js-right-anim">
+                            <span class="autopark__card-title">Комфорт</span>
+                            <img src="img/car_2.png" alt="car2">
+                            <p class="autopark__card-description">
+                                Skoda Octavia<br>
+                                Volkswagen Jetta<br>
+                                Hyundai Elantra и другие
+                            </p>
+                            <span class="autopark__card-line"></span>
+                            <span class="autopark__card-seats">4 места</span>
+                            <span class="autopark__card-luggage">4 багажа</span>
+                        </div>
+                    </div>
+                    <div class="autopark__card-wrapper">
+                        <div class="autopark__card js-right-anim">
+                            <span class="autopark__card-title">минивэн</span>
+                            <img src="img/car_3.png" alt="car3">
+                            <p class="autopark__card-description">
+                                Hyundai H1<br>
+                                Mercedes Viano<br>
+                                Ford Transit и другие
+                            </p>
+                            <span class="autopark__card-line"></span>
+                            <span class="autopark__card-seats">8 места</span>
+                            <span class="autopark__card-luggage">8 багажа</span>
+                        </div>
+                        <div class="autopark__card js-right-anim">
+                            <span class="autopark__card-title">Микроавтобус</span>
+                            <img src="img/car_4.png" alt="car4">
+                            <p class="autopark__card-description">
+                                Mercedes Sprinter<br>
+                                Volkswagen Crafter<br>
+                                и подобные
+                            </p>
+                            <span class="autopark__card-line"></span>
+                            <span class="autopark__card-seats">20 места</span>
+                            <span class="autopark__card-luggage">20 багажа</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="whyUs">
+            <div class="whyUs__container">
+                <h2 class="whyUs__title"><span class="whyUs__title--orange">Почему</span> выбирают нас</h2>
+                <div class="whyUs__features">
+                    <div class="whyUs__feature js-left-anim">
+                        <span class="whyUs__feature-name">Бесплатное ожидание</span>
+                        <span class="whyUs__feature-description">Если ваш рейс задержан — ожидание бесплатно</span>
+                    </div>
+                    <div class="whyUs__feature js-left-anim">
+                        <span class="whyUs__feature-name">Помощь с багажом</span>
+                        <span class="whyUs__feature-description">Водитель встретит Вас и поможет с багажом по пути к автомобилю</span>
+                    </div>
+                    <div class="whyUs__feature js-left-anim">
+                        <span class="whyUs__feature-name">Фиксированная цена</span>
+                        <span class="whyUs__feature-description">Стоимость проезда, указанная на сайте фиксирована и не изменится</span>
+                    </div>
+                    <div class="whyUs__feature js-left-anim">
+                        <span class="whyUs__feature-name">24 часа / 7дней</span>
+                        <span class="whyUs__feature-description">Бронируйте трансфер как удобно Вам: онлайн на сайте, по телефону или через Вайбер, Ватсапп, Телеграм</span>
+                    </div>
+                    <div class="whyUs__feature js-left-anim">
+                        <span class="whyUs__feature-name">Работаем по всему Крыму!</span>
+                        <span class="whyUs__feature-description">Подача такси в любую точку Крыма без исключений! Без доплат!</span>
+                    </div>
+                    <div class="whyUs__feature js-left-anim">
+                        <span class="whyUs__feature-name">Детское кресло</span>
+                        <span class="whyUs__feature-description">Автолюлька, детское кресло или бустер для Вашего ребёнка - бесплатно!</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="excursion">
+            <h2 class="excursion__title"><span class="excursion__title--blue">Экскурсии</span> по Крыму</h2>
+            <div class="excursion__container">
+                <div class="excursion__place js-left-anim">
+                    <img class="excursion__place-image" src="img/Vorontsov_Palace.jpg" alt="Воронцовский дворец">
+                    <span class="excursion__place-text">Воронцовский дворец</span>
+                    <div class="excursion__place-shadow"></div>
+                </div>
+                <div class="excursion__place js-top-anim">
+                    <img class="excursion__place-image" src="img/Levadia_Palace.jpg" alt="Ливадийский дворец">
+                    <span class="excursion__place-text">Ливадийский дворец</span>
+                    <div class="excursion__place-shadow"></div>
+                </div>
+                <div class="excursion__place js-right-anim">
+                    <img class="excursion__place-image" src="img/Swallows_Nest_Castle.jpg" alt="Ласточкино гнездо">
+                    <span class="excursion__place-text">Ласточкино гнездо</span>
+                    <div class="excursion__place-shadow"></div>
+                </div>
+                <div class="excursion__place js-left-anim">
+                    <img class="excursion__place-image" src="img/Monument_to_the_Scuttled_Ships.jpg" alt="Памямятник затопленным кораблям">
+                    <span class="excursion__place-text">Памямятник затопленным кораблям</span>
+                    <div class="excursion__place-shadow"></div>
+                </div>
+                <div class="excursion__place js-top-anim">
+                    <img class="excursion__place-image" src="img/Balaclava.jpg" alt="Балаклава">
+                    <span class="excursion__place-text">Балаклава</span>
+                    <div class="excursion__place-shadow"></div>
+                </div>
+                <div class="excursion__place js-right-anim">
+                    <img class="excursion__place-image" src="img/Ay_Petri.jpg" alt="Ай-Петри">
+                    <span class="excursion__place-text">Ай-Петри</span>
+                    <div class="excursion__place-shadow"></div>
+                </div>
+            </div>
+        </section>
+        <section class="booking">
+            <div class="booking__container">
+                <div class="booking__description js-left-anim">
+                    <span class="booking__title"><span class="booking__line-breaker">Забронируйте</span> идеальную экскурсию по Крыму!</span>
+                    <span class="booking__offer">- Рассчитаем стоимость экскурсии<br>
+                            - Забронируем авто на желаемую дату<br>
+                            - Дарим <span class="booking__offer--bold">10% скидки</span> на обратную поездку
+                            </span>
+                    <span class="booking__duty">«ТАКСИ-ЮБК» позаботится о Вашем комфорте, безопасности<br>
+                            и создаст позитивную атмосферу от начала до конца поездки!</span>
+                </div>
+                <form class="booking__form js-right-anim" action="#">
+                    <label for="bookFirstName" class="hidden__label">Ваше имя</label>
+                    <input id="bookFirstName" class="booking__input" type="text" name="firstname" placeholder="Ваше имя">
+                    <label for="bookPhone" class="hidden__label">Номер телефона</label>
+                    <input id="bookPhone" class="booking__input" type="text" name="phone"  placeholder="Номер телефона">
+                    <label for="dateRoute" class="hidden__label">Дата и желаемый маршрут</label>
+                    <textarea id="dateRoute" class="booking__input booking__comment" name="comments" placeholder="Дата и желаемый маршрут"></textarea>
+                    <button class="booking__submit" type="submit">Забронировать авто</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <h2 class="footer__title"><span class="footer__title-bold">связаться</span> с нами</h2>
+        </div>
+        <div class="footer__contacts">
+            <div class="footer__contacts-cont">
+                <a href="#" class="footer__contact-link">
+                    <img src="img/telegram.png" alt="telegram">
+                    <span class="footer__contact-text">Telegram</span>
+                </a>
+                <a href="#" class="footer__contact-link">
+                    <img src="img/viber.png" alt="telegram">
+                    <span class="footer__contact-text">Viber</span>
+                </a>
+                <a href="#" class="footer__contact-link">
+                    <img src="img/mts.png" alt="telegram">
+                    <span class="footer__contact-text">МТС 8-978-571-14-13</span>
+                </a>
+                <a href="#" class="footer__contact-link">
+                    <img src="img/whatsapp.png" alt="telegram">
+                    <span class="footer__contact-text">WhatsApp</span>
+                </a>
+                <a href="#" class="footer__contact-link">
+                    <img src="img/mail.png" alt="telegram">
+                    <span class="footer__contact-text">sevasbus@yandex.ru</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer__rights">
+            <div class="footer__rights-cont">
+                <span class="footer__rights-text">© Все права защищены</span>
+                <span class="footer__rights-text">2019</span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

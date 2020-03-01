@@ -1,0 +1,204 @@
+@media screen and (max-height 650px)
+  .header
+    &__proceed
+      display none
+
+@media screen and (max-width 1170px)
+  .header
+    &__form
+      margin-right 0
+    &__wrapper
+      max-width 455px
+      &:first-child
+        margin-bottom 0
+
+  .autopark
+    &__card-wrapper
+      &:nth-child(1),
+      &:nth-child(2)
+        margin 0 15px
+    &__card
+      &:nth-child(1),
+      &:nth-child(2)
+        margin 15px
+
+@media screen and (max-width 991px)
+  .header
+    &__proceed
+      transform translate(-50%, 120%)
+    &__container
+      min-height 100%
+      flex-direction column
+      align-content center
+      align-items center
+      &:after
+        content none
+
+  .booking
+    &__description
+      width 500px
+      margin 28px 30px 20px 100px
+      text-align left
+    &__line-breaker:after
+      content none
+    &__form
+      padding-left 0
+
+  .whyUs
+    &__description
+      margin-left 0
+
+  .footer
+    &__contact-link
+      flex-grow 0
+      width 52px
+      &:nth-child(1)
+        order 1
+      &:nth-child(2)
+        order 2
+      &:nth-child(3)
+        order 4
+      &:nth-child(4)
+        order 3
+      &:nth-child(5)
+        order 5
+    &__contact-text
+      display none
+
+@media screen and (max-width 790px)
+  .whyUs
+    &__feature
+      margin 10px 15px
+
+@media screen and (max-width 768px)
+  .whyUs
+    &__image
+      margin 0
+    &__excursion
+      padding 0 10px
+
+  .booking
+    background url('../img/booking_tablet.jpg') center center no-repeat
+    background-size cover
+
+  .footer
+    &__title
+      display none
+
+@media screen and (max-width 630px)
+  .header
+    &__proceed-wrapper
+      display none
+  .booking
+    &__description
+      width 400px
+      margin 20px 0
+    &__form
+      width 400px
+    &__input, &__submit
+      width 100%
+
+@media screen and (max-width 500px)
+  .header
+    &__container
+      padding 0 9px
+    &__wrapper
+      &:nth-child(1)
+        min-height 390px
+        margin-bottom 50px
+    &__contact-wrapper
+      justify-content center
+    &__contact-link
+      &:nth-child(2), &:nth-child(4)
+        margin 9px 9px 9px 0
+    &__input-wrapper
+      justify-content center
+    &__input-inner
+      width 100%
+      &:nth-child(1)
+        margin-right 0
+      &:nth-child(2)
+        margin-left 0
+    &__input
+      width 100%
+      //&:nth-child(2)
+      //  margin-top 18px
+    &__submit
+      width 202px
+      margin-top 18px
+    &__checkbox
+      width 244px
+      margin-top 18px
+      input
+        width 12px
+      .cover
+        margin 0
+    &__price
+      width 100%
+
+
+  .booking
+    &__description
+      padding 0 15px
+      margin 20px 0
+    &__form
+      align-items center
+      padding 0 15px
+
+  .whyUs
+    &__features
+      padding 0 10px
+
+  .footer
+    &__contacts-cont
+      width 100%
+      height 100%
+      padding 0
+    &__contact-link
+      height 40px
+      margin 7px 0
+      &:nth-child(1)
+        order 3
+      &:nth-child(2)
+        order 5
+      &:nth-child(3)
+        order 1
+      &:nth-child(4)
+        order 4
+      &:nth-child(5)
+        order 2
+
+@media screen and (max-width 425px)
+  .header
+    &__title
+      font-size 24px
+      padding 0 15px
+      margin 14px 0
+    &__text, img
+      padding 0 15px
+  .excursion
+    &__place
+      width 300px
+      height 308px
+      margin 5px
+  .booking
+    background-position 85% center
+
+@media screen and (max-width 375px)
+  .header
+    &__contact-link
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        margin 0 0 9px 0
+    &__form
+      padding 13px 8px
+  .whyUs
+    &__title
+      font-size 18px
+    &__feature
+      margin 10px 0
+  .footer
+    &__contact-link
+      margin 5px

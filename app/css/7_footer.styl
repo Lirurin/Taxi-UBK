@@ -1,0 +1,78 @@
+.footer
+  width 100%
+  overflow hidden
+
+  &__top
+    width 100%
+    background-color #565656
+    text-align center
+
+  &__title
+    color #fff
+    font-size 24px
+    line-height 45px
+    text-transform uppercase
+
+    &-bold
+      font-weight 800
+
+  &__contacts
+    display flex
+    align-items center
+    width 100%
+    min-height 102px
+    background linear-gradient(to left, rgba(73,73,73,1) 0%,rgba(76,76,76,1) 17%,rgba(127,127,127,1) 50%,rgba(76,76,76,1) 84%,rgba(79,79,79,1) 100%)
+
+    &:after
+      content ''
+      min-height inherit
+      font-size 0
+
+  &__contacts-cont
+    display flex
+    flex-flow row wrap
+    align-items center
+    justify-content center
+    max-width 1170px
+    width 100%
+    height 100%
+    margin 0 auto
+
+  &__rights-cont
+    display flex
+    flex-flow row wrap
+    align-items center
+    justify-content space-between
+    max-width 1170px
+    width 100%
+    height 100%
+    padding 0 60px
+    margin 0 auto
+
+  &__rights
+    background-color #232323
+
+  &__rights-text
+    color #9B9B9B
+    font-size 13px
+    line-height 45px
+
+  &__contact-link
+    display flex
+    flex-grow 1
+    flex-direction row
+    justify-content flex-start
+    align-items center
+    height 52px
+    margin 0 15px
+    text-decoration none
+    cursor pointer
+    img
+      width 36px
+      height 36px
+
+  &__contact-text
+    margin-left 10px
+    color #fff
+    font-size 13px
+

@@ -1,0 +1,281 @@
+.header
+  position relative
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  width 100%
+  height 100%
+  padding 33px 0 0 0
+  background #296194 url('../img/header__bg.jpg') no-repeat center
+  background-size cover
+  overflow hidden
+  &:after
+    content ''
+    min-height inherit
+    font-size 0
+
+  &__container
+    display flex
+    flex-flow row wrap
+    justify-content center
+    align-items center
+    max-width 1170px
+    width 100%
+    min-height 86vh
+    padding 33px 10px 0 10px
+
+    &:after
+      content ''
+      min-height inherit
+      font-size 0
+
+  &__wrapper
+    max-width 558px
+    width 100%
+    min-height 435px
+
+    &:nth-child(1)
+      margin-bottom 50px
+
+  &__title
+    margin 24px 0
+    color #fff
+    font-size 36px
+    font-weight 600
+    text-transform uppercase
+
+  &__bold
+    font-weight 800
+
+  &__text
+    margin-bottom 18px
+    color #fff
+    font-size 18px
+    line-height 150%
+    font-weight 600
+
+  &__contact-wrapper
+    display flex
+    flex-flow row wrap
+
+  &__contact-link
+    position relative
+    display block
+    width 202px
+    padding 13px 0 13px 20px
+    border 1px solid #ffffff
+    border-radius 20px
+    color #fff
+    text-align center
+    font-size 12px
+    line-height 12px
+    font-weight 800
+    text-decoration none
+    text-transform uppercase
+    background-color rgba(0, 0, 0, 0.5)
+    background-position left center
+    background-size contain
+    background-repeat no-repeat
+    transition background-color .2s ease
+
+    &:hover, &:focus
+      background-color #000000
+      transition background-color .2s ease
+
+    &:nth-child(1),
+    &:nth-child(3)
+      margin 9px 9px 9px 0
+    &:nth-child(2),
+    &:nth-child(4)
+      margin 9px
+    &:nth-child(1)
+      background-image url('../img/mts.png')
+    &:nth-child(2)
+      background-image url('../img/whatsapp.png')
+    &:nth-child(3)
+      background-image url('../img/telegram.png')
+    &:nth-child(4)
+      background-image url('../img/viber.png')
+
+  &__form
+    display flex
+    flex-flow column wrap
+    justify-content flex-start
+    max-width 454px
+    min-height 478px
+    padding 13px 16px
+    border-radius 15px
+    margin 0 auto
+    background linear-gradient(128.76deg, #296194 0%, #2C3A4D 100%), #193F80
+    box-shadow 0 4px 20px rgba(0, 0, 0, 0.25)
+
+  &__form-title
+    width 100%
+    color #fff
+    font-size 15px
+    font-weight 800
+    text-align center
+    text-transform uppercase
+
+  &__form-subtitle
+    width 100%
+    margin-top 6px
+    color #fff
+    font-size 15px
+    font-weight 600
+    text-align center
+
+  &__input-wrapper
+    position relative
+    display flex
+    flex-flow row wrap
+    justify-content space-between
+    margin 9px 0
+
+    &--thin
+      margin 0
+
+  &__input-inner
+    display flex
+    flex-direction column
+
+    &:nth-child(1)
+      margin-right 9px
+
+    &:nth-child(2)
+      margin-left 9px
+
+  &__required
+    position absolute
+    top 5px
+    left 13px
+    display block
+    color #F2994A
+    font-size 24px
+
+  &__input
+    width 202px
+    height 42px
+    padding-left 30px
+    border-radius 5px
+    border 1px solid #FFFFFF
+    box-shadow inset 2px 2px 4px rgba(0, 0, 0, 0.5)
+    color #494949
+    font-size 14px
+
+    &--commentary
+      padding 12px 0 10px 30px
+      text-align left
+      background url(../img/commentary.png) no-repeat right #fff
+      background-position 101% 19px
+      resize none
+
+  &__form-dropdown
+    position relative
+    display block
+    max-width 422px
+    width 100%
+    height 42px
+
+  &__checkbox
+    position relative
+    display flex
+    flex-direction row
+    align-items center
+    width 202px
+    height 42px
+    padding-left 10px
+    color #fff
+    font-size 14px
+
+    &--bold
+      font-weight bold
+
+    label
+      margin-right 15px
+
+  &__date
+    background url(../img/date.png) no-repeat right #fff
+    background-position 98% 11px
+
+  &__time
+    background url(../img/time.png) no-repeat right #fff
+    background-position 98% 11px
+
+  &__price
+    display block
+    width 202px
+    height 42px
+    padding 10px 0
+    border 1px solid #FFFFFF
+    border-radius 5px
+    background-color #00000000
+    color #ffffff
+    font-size 14px
+    text-align center
+
+  &__price-number
+    font-weight 800
+
+  &__submit
+    position relative
+    z-index 1
+    display block
+    width 202px
+    height 42px
+    border 1px solid #F2C94C
+    border-radius 5px
+    background-color transparent
+    color #F2D74A
+    font-weight 800
+    font-size 14px
+    line-height 17px
+    text-transform uppercase
+    transition all 0.5s ease-in-out
+
+  &__submit
+    &:hover
+      border 1px solid #F2994A
+      background-color #F2994A
+      color #fff
+      box-shadow 0 6px 12px #F2994A70
+      text-shadow 0 1px 2px #F24A4A
+      transition all 0.3s ease-in-out
+      cursor pointer
+
+  &__submit
+    &:hover:before
+      display block
+      transform-origin center left
+      transform scaleX(1)
+
+  &__proceed-wrapper
+    position relative
+    display flex
+    flex-flow row wrap
+    justify-content center
+    max-width 1170px
+    width 100%
+    min-height 9vh
+
+  &__proceed
+    position absolute
+    bottom 50px
+    left 50%
+    display block
+    width 44px
+    height 44px
+    padding 11px 9px 0 9px
+    border-radius 50%
+    background #F2C94C
+    box-shadow 0 2px 6px rgba(0, 0, 0, 0.25)
+    transform translateX(-50%)
+    animation bounce 2s infinite ease-in-out
+
+    svg
+      width 26px
+      height 26px
+      fill #fff
+      filter drop-shadow( 0px 0 3px hsla(45, 100%, 43%, 1))
+
