@@ -120,60 +120,6 @@ input[type="checkbox"]:checked ~ .cover {
   -webkit-animation: appear 1.5s forwards;
           animation: appear 1.5s forwards;
 }
-@-webkit-keyframes bounce {
-  0% {
-    bottom: 60px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25% {
-    bottom: 70px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  50% {
-    bottom: 60px;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  75% {
-    bottom: 70px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  100% {
-    bottom: 60px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-}
-@keyframes bounce {
-  0% {
-    bottom: 60px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25% {
-    bottom: 70px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  50% {
-    bottom: 60px;
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  75% {
-    bottom: 70px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  100% {
-    bottom: 60px;
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-}
 @-webkit-keyframes appear {
   0% {
     opacity: 0;
@@ -572,8 +518,6 @@ input[type="checkbox"]:checked ~ .cover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-animation: bounce 2s infinite ease-in-out;
-          animation: bounce 2s infinite ease-in-out;
 }
 .header__proceed svg {
   width: 26px;
